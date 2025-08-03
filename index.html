@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidharth Babu - Game Designer & QA Tester Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA; /* Soft off-white background */
+        }
+        .section-title {
+            @apply text-4xl font-bold text-slate-800 mb-12 text-center;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .skill-tag {
+            @apply bg-slate-200 text-slate-700 text-sm font-medium px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 hover:bg-teal-100 hover:text-teal-800;
+        }
+        .project-tech-tag {
+            @apply bg-slate-100 text-slate-600 text-xs font-semibold mr-2 mb-2 px-2.5 py-1 rounded-full;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header -->
+    <header class="glassmorphism shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-800">Sidharth Babu</a>
+            <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <a href="#home" class="text-slate-600 hover:text-teal-600 transition duration-300">Home</a>
+                <a href="#projects" class="text-slate-600 hover:text-teal-600 transition duration-300">Projects</a>
+                <a href="#skills" class="text-slate-600 hover:text-teal-600 transition duration-300">Skills</a>
+                <a href="#about" class="text-slate-600 hover:text-teal-600 transition duration-300">About</a>
+                <a href="#contact" class="bg-teal-500 text-white px-5 py-2 rounded-lg hover:bg-teal-600 transition duration-300 shadow-sm hover:shadow-md">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90">
+            <a href="#home" class="block py-3 px-6 text-sm hover:bg-slate-100">Home</a>
+            <a href="#projects" class="block py-3 px-6 text-sm hover:bg-slate-100">Projects</a>
+            <a href="#skills" class="block py-3 px-6 text-sm hover:bg-slate-100">Skills</a>
+            <a href="#about" class="block py-3 px-6 text-sm hover:bg-slate-100">About</a>
+            <a href="#contact" class="block py-3 px-6 text-sm hover:bg-slate-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-24 md:py-40">
+            <div class="container mx-auto px-6 text-center">
+                <img src="https://placehold.co/150x150/E0F2F1/0D9488?text=SB" alt="Sidharth Babu" class="w-40 h-40 rounded-full mx-auto mb-6 border-8 border-white shadow-xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-800 mb-3">Sidharth Babu</h1>
+                <p class="text-xl md:text-2xl text-teal-600 font-medium mb-8">Game Designer & QA Tester</p>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 mb-10">
+                   Hi, I’m Sidharth — a passionate game designer and tech explorer from Kerala, India. I build engaging gameplay systems, test mechanics, and refine player experiences to improve how games feel.
+                </p>
+                <p class="text-2xl italic text-slate-500 mb-12">"Great games aren’t just played – they’re felt."</p>
+                <a href="#projects" class="bg-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">View My Work</a>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project Card 1 -->
+                    <div class="bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col group">
+                        <img src="https://placehold.co/600x400/67e8f9/0e7490?text=1v1+FPS" alt="1v1 FPS Multiplayer Game" class="w-full h-56 object-cover">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-slate-800">1v1 FPS Multiplayer Game</h3>
+                            <p class="text-slate-600 mb-6 text-sm flex-grow">Designed and implemented a polished 1v1 online multiplayer FPS game in UE5, integrating Steam for matchmaking and focusing on tight, balanced gameplay.</p>
+                            <div class="mb-6">
+                                <span class="project-tech-tag">Unreal Engine 5</span>
+                                <span class="project-tech-tag">Blueprints</span>
+                                <span class="project-tech-tag">Steam SDK</span>
+                            </div>
+                            <a href="https://www.linkedin.com/posts/sidharth-babu-18905328b_project-title-1v1-online-fpp-multiplayer-activity-7330880732417982464-rGXQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZO2jkBINITBByV6Ynb3XPZ2hThWsFUHGw" target="_blank" class="mt-auto bg-white text-teal-600 border border-teal-200 px-6 py-3 rounded-lg font-semibold hover:bg-teal-500 hover:text-white transition duration-300 text-center group-hover:bg-teal-500 group-hover:text-white">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col group">
+                        <img src="https://placehold.co/600x400/a7f3d0/065f46?text=Environment+Art" alt="Environment Art" class="w-full h-56 object-cover">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-slate-800">Environment Art & Composition</h3>
+                            <p class="text-slate-600 mb-6 text-sm flex-grow">Created a stunning nature-inspired environment in UE5, focusing on realistic lighting with Lumen, atmosphere, and storytelling through visual design.</p>
+                             <div class="mb-6">
+                                <span class="project-tech-tag">Unreal Engine 5</span>
+                                <span class="project-tech-tag">Quixel Megascans</span>
+                                <span class="project-tech-tag">Lumen</span>
+                            </div>
+                             <a href="https://www.linkedin.com/posts/sidharth-babu-18905328b_unrealengine-gamedesign-environmentart-activity-7330870201455910913-VbEc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZO2jkBINITBByV6Ynb3XPZ2hThWsFUHGw" target="_blank" class="mt-auto bg-white text-teal-600 border border-teal-200 px-6 py-3 rounded-lg font-semibold hover:bg-teal-500 hover:text-white transition duration-300 text-center group-hover:bg-teal-500 group-hover:text-white">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-slate-50 rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl flex flex-col group">
+                        <img src="https://placehold.co/600x400/fecdd3/881337?text=Soul+City" alt="Soul City Project" class="w-full h-56 object-cover">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold mb-2 text-slate-800">Soul City: Cinematic Design</h3>
+                            <p class="text-slate-600 mb-6 text-sm flex-grow">Developed a detailed urban environment inspired by cinematic storytelling, focusing on modular layout, nighttime lighting, and atmosphere creation.</p>
+                             <div class="mb-6">
+                                <span class="project-tech-tag">Unreal Engine 5</span>
+                                <span class="project-tech-tag">Lumen</span>
+                                <span class="project-tech-tag">Modular Design</span>
+                            </div>
+                             <a href="https://www.linkedin.com/posts/sidharth-babu-18905328b_unrealengine-environmentdesign-soulcity-activity-7330840820918484992-dFCJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZO2jkBINITBByV6Ynb3XPZ2hThWsFUHGw" target="_blank" class="mt-auto bg-white text-teal-600 border border-teal-200 px-6 py-3 rounded-lg font-semibold hover:bg-teal-500 hover:text-white transition duration-300 text-center group-hover:bg-teal-500 group-hover:text-white">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-10">
+                        <h3 class="text-2xl font-bold text-slate-700 mb-6 text-center">Game Design & QA</h3>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="skill-tag">Level Design</span>
+                            <span class="skill-tag">Game Balance & Tuning</span>
+                            <span class="skill-tag">Bug Reporting</span>
+                            <span class="skill-tag">Test Case Creation</span>
+                            <span class="skill-tag">Recoil Testing</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-700 mb-6 text-center">Software & Engines</h3>
+                         <div class="flex flex-wrap justify-center gap-3">
+                            <span class="skill-tag"><i class="fab fa-unreal"></i>Unreal Engine 5</span>
+                            <span class="skill-tag"><i class="fab fa-unity"></i>Unity</span>
+                            <span class="skill-tag">Blueprints</span>
+                            <span class="skill-tag">OBS Studio</span>
+                            <span class="skill-tag">Canva</span>
+                            <span class="skill-tag">Notion</span>
+                            <span class="skill-tag">Trello</span>
+                            <span class="skill-tag">Google Workspace</span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                     <div class="md:w-1/3 text-center">
+                        <img src="https://placehold.co/600x600/E0F2F1/0D9488?text=Profile" alt="About Me Image" class="rounded-2xl shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-bold text-slate-800 mb-6">About Me</h2>
+                        <p class="mb-4 text-slate-600 leading-relaxed">
+                            I'm a builder, tester, and curious soul. My journey into games started from a love of game mechanics and how digital experiences can evoke emotion. I hold an advanced diploma in Game Design and have dabbled in UI prototyping, recoil testing, and QA analysis.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            When I’m not designing or debugging, I hit the gym, explore spiritual practices like meditation, and dive into new tech like Gemini and AI tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Let's Build Together</h2>
+                <p class="max-w-2xl mx-auto text-lg text-slate-600 mb-10">
+                    I'm open to entry-level roles in QA, Game Design, and Level Design. Have a project or an idea? I'd love to hear from you.
+                </p>
+                <div class="flex justify-center items-center gap-4">
+                    <a href="mailto:sidharthbabu740@gmail.com" class="bg-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-3">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/sidharth-babu-18905328b" target="_blank" class="bg-white text-slate-700 px-8 py-4 rounded-lg font-semibold hover:bg-slate-200 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-3">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-10">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 Sidharth Babu. All Rights Reserved.</p>
+            <p class="mt-2">Designed with <i class="fas fa-heart text-teal-500"></i> and built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a, .md\\:flex a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if(link.getAttribute('href').startsWith('#')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
